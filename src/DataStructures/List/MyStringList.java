@@ -42,6 +42,8 @@ public class MyStringList {
     }
 
     public boolean remove(String s){
+        if(numOfElements == 0) return false;
+        if(s == null) return false;
         int index = -1;
         for(int i = 0; i < numOfElements; i++){
             if(currentArray[i].equals(s)) index = i;
