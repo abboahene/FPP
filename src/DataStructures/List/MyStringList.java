@@ -4,23 +4,6 @@ import java.util.Arrays;
 
 public class MyStringList {
 
-    public static void main(String[] args) {
-        MyStringList sl  =  new MyStringList();
-        sl.add("A");
-          sl.add("B");
-          sl.add("C");
-         sl.add("D");
-        sl.insert("E", 2);
-        sl.insert("G", 3);
-        System.out.println("Find: " + sl.find("F"));
-        System.out.println("At index 3: " + sl.get(3));
-        sl.remove("G");
-        sl.remove("E");
-
-        System.out.println(sl);
-
-    }
-
     private final int INITIAL_LENGTH = 4;
     private String[] currentArray;
     private int numOfElements;
@@ -108,5 +91,22 @@ public class MyStringList {
     public Object clone(){
         String[] temp = Arrays.copyOf(currentArray, numOfElements);
         return temp;
+    }
+
+    public static void main(String[] args) {
+        MyStringList sl  =  new MyStringList();
+        sl.add("A");
+        sl.add("B");
+        sl.add("C");
+        sl.add("D");
+        sl.insert("E", 2);
+        sl.insert("G", 3);
+        System.out.println("Find: " + sl.find("F"));
+        System.out.println("At index 3: " + sl.get(3));
+        sl.remove("G");
+        sl.remove("E");
+
+        System.out.println(sl);
+
     }
 }

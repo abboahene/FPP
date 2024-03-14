@@ -1,4 +1,4 @@
-package practice;
+package Practice;
 
 public class MyStack {
 }
