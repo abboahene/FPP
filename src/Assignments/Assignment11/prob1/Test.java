@@ -16,7 +16,6 @@ public class Test {
 		};
 		
 		HashMap<Key, Student> map = Admin.processStudents(list);
-		System.out.println(map);
 		boolean[] expectedOutput = {true, false};
 		boolean[] results = new boolean[2];
 		Student s = new Student("Pierre", "Fromage", 2.8, Standing.FRESHMAN);
