@@ -18,6 +18,9 @@ public class MyHashtable {
     }
     // First Try
     public void put(Object key, Object value){
+
+        if(key == null) return;
+        //-------class code
         //disallow null keys
         if(key == null) return;
         // get the "big" integer corresponding to the object
@@ -26,6 +29,23 @@ public class MyHashtable {
         //compress down to a table slot
         int hashValue = hash(hashcode);
         //create the entry
+
+//        //-------my code
+//        if(table[hashValue] == null) {
+//            table[hashValue] = new LinkedList<>();
+//        }
+//
+//        for(Object ob: table[hashValue]){
+//            Entry entry = (Entry) ob;
+//            if(entry.key.equals(key)){
+//                entry.value = value;
+//            }
+//        }
+//        Entry e = new Entry(key, value);
+//        table[hashValue].add(e);
+//        numberOfElements++;
+//        //-------my code
+
         Entry e = new Entry(key, value);
         boolean keyAlreadyInUse = false;
         if(table[hashValue] != null){
@@ -62,7 +82,7 @@ public class MyHashtable {
         //so Iterator is used to retrieve the correct match
         Entry e = null;
         for(Iterator it = table[hashValue].iterator(); it.hasNext();){
-            e = (Entry) it .next();
+            e = (Entry) it.next();
             if(e.key.equals(key)){
                 return e.value;
             }
