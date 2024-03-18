@@ -7,7 +7,7 @@ public class MyHashtable {
     private int numberOfElements;
     private static final int INITIAL_SIZE = 19;
     private int tableSize;
-    // To avoid collision iwth same index, every index is implemented with LinkedList
+    // To avoid collision with same index, every index is implemented with LinkedList
     private LinkedList[] table;
     public MyHashtable(){
         this(INITIAL_SIZE);

@@ -112,7 +112,6 @@ public class BinarySearchTree {
                 // find target in right subtree
                 // if root -> val < key
                 node.right = deleleteNode(node.right, key);
-
             }else{
                 //find target in left subtree
                 //if root => val < key
