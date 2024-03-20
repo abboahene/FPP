@@ -12,6 +12,13 @@ public class Main {
         msl.add("e");
         msl.add("f");
         msl.add("g");
+        msl.insert(0, "h");
+        msl.insert(1,"i");
+        msl.insert(2,"j");
+        msl.insert(3,"k");
+        msl.insert(4,"l");
+        msl.insert(5,"m");
+        msl.insert(6,"n");
         msl.remove(1);
         msl.remove(1);
         msl.remove(1);
