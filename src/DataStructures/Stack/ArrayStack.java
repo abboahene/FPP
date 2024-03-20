@@ -20,8 +20,8 @@ public class ArrayStack {
             System.out.println("Stack is empty");
             return null;
         };
-        top--;
-        return a[top];
+
+        return a[top--];
     }
 
     public boolean isEmpty(){

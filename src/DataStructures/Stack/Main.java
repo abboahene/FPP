@@ -9,8 +9,8 @@ public class Main {
         as.push(2);
         as.push(4);
         as.push(3);
-        as.push(3);
 
+        System.out.println(as.pop());
         as.pop();
         as.pop();
         System.out.println(as);
